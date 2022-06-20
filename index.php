@@ -16,7 +16,7 @@ foreach ($arr as $key) {
     //echo $key['name'];  echo $key['code'];
        $code=$key['code'];
        $name=$key['name'];
-           $sql='INSERT INTO countries(code, name, is_active) VALUES ("'.$code.'", "'.$name.'", 1)';
+           $sql='INSERT INTO countries(code, name) VALUES ("'.$code.'", "'.$name.'"';
 
        $query = $conn->query($sql) or die(mysqli_error($conn));
 
